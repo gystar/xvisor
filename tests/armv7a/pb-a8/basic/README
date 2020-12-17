@@ -26,7 +26,7 @@ Please follow the steps below to build & run Basic Test on Realview PB-A8:
   # make -C tests/armv7a/pb-a8/basic
 
   [5. Launch QEMU]
-  # qemu-system-arm -M realview-pb-a8 -display none -serial stdio -kernel build/tests/armv7a/pb-a8/basic/qemu.img
+  # qemu-system-arm -S -s -M realview-pb-a8 -display none -serial stdio -kernel build/tests/armv7a/pb-a8/basic/qemu.img
 
   [6. Kick Guest for starting Basic Test]
   XVisor# guest kick -1
